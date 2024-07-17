@@ -17,11 +17,8 @@ build: off  # отключаем встроенную в appveyor систему
 build_script:
   - yarn build   # команда сборки
 
-before_test:
-  - yarn start  # команда сборки
-
 test_script:
-  - yarn lint && yarn e2e  # скрипт тестирования
+  - yarn lint && - yarn start && yarn e2e  # скрипт тестирования
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
