@@ -5,6 +5,4 @@ import puppeteer from 'puppeteer';
 test('new test', () => {
   const add = "test";
   expect(add).toBe("test");
-})
-
-;
+});
