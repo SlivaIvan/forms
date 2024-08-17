@@ -1,0 +1,1 @@
+(()=>{"use strict";var e;e=document.querySelector(".btn").dataset.content,new bootstrap.Popover(document.querySelector('[data-toggle="popover"]'),{placement:"top",content:`${e}`,template:'<div class="popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>'})})();
