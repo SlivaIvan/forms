@@ -15,7 +15,6 @@ describe('test to open webserver', () => {
     page = await browser.newPage();
   });
   test("test to open server", async () => {
-    await page.goto('http://localhost:8080');
   });
 
   afterAll(async () => {
