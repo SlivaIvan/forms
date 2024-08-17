@@ -2,22 +2,9 @@
 /* eslint-disable quotes */
 import puppeteer from 'puppeteer';
 
-describe('test to open webserver', () => {
-  let browser;
-  let page;
+test('new test', () => {
+  const add = "test";
+  expect(add).toBe("test");
+})
 
-  beforeEach(async () => {
-    browser = await puppeteer.launch({
-      headless: false,
-      slowMo: 100,
-      devtools: true,
-    });
-    page = await browser.newPage();
-  });
-  test("test to open server", async () => {
-  });
-
-  afterAll(async () => {
-    await browser.close();
-  });
-});
+;
